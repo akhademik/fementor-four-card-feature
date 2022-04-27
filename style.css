@@ -130,3 +130,59 @@ body {
 .cards__calculator::before {
 	background-image: url(./images/icon-calculator.svg);
 }
+
+/* Begin of desktop screen  */
+@media (min-width: 40rem) {
+	.wrapper {
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+	.wrapper__cards {
+		margin: 0;
+		max-width: 320px;
+		min-height: 220px;
+	}
+	.wrapper__content {
+		text-align: center;
+		grid-column: span 3;
+	}
+	.wrapper__content p:last-child {
+		text-align: center;
+		padding: 0 30%;
+	}
+
+	/* Easy to understand way to arrange div cards using orders  */
+	/* .wrapper div:not(.wrapper__content) {
+		grid-row: span 2;
+	}
+	.cards__supervisor {
+		order: 2;
+		grid-column: 1;
+	}
+	.cards__team {
+		order: 1;
+		grid-column: 2;
+	}
+	.cards__karma {
+		order: 4;
+	}
+	.cards__calculator {
+		order: 3;
+	} */
+
+	/* Advanced way to arrange div cards using grid-row and span  */
+	.wrapper div:nth-child(2) {
+		grid-row: 3 / span 2;
+	}
+	.wrapper div:nth-child(3) {
+		grid-row: 2 / span 2;
+	}
+	.wrapper div:nth-child(4) {
+		grid-row: 4 / span 2;
+	}
+	.wrapper div:nth-child(5) {
+		grid-row: 3 / span 2;
+	}
+}
