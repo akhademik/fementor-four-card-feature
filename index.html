@@ -2,38 +2,37 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-
-		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
-		<title>Frontend Mentor | Four card feature section</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
+		<link rel="stylesheet" href="style.css" />
+		<title>Four Card Feature</title>
 	</head>
 	<body>
-		Reliable, efficient delivery Powered by Technology Our Artificial Intelligence powered tools
-		use millions of project data points to ensure that your project is successful Supervisor
-		Monitors activity to identify project roadblocks Team Builder Scans our talent network to
-		create the optimal team for your project Karma Regularly evaluates our talent to ensure
-		quality Calculator Uses data from past projects to provide better delivery estimates
-
-		<footer>
-			<p class="attribution">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-					>Frontend Mentor</a
-				>. Coded by <a href="#">Your Name Here</a>.
-			</p>
-		</footer>
+		<div class="wrapper">
+			<div class="wrapper__content">
+				<p>Reliable, efficient delivery</p>
+				<p>Powered by Technology</p>
+				<p>
+					Our Artificial Intelligence powered tools use millions of project data points to
+					ensure that your project is successful
+				</p>
+			</div>
+			<div class="wrapper__cards cards__supervisor">
+				<h1>Supervisor</h1>
+				<p>Monitors activity to identify project roadblocks</p>
+			</div>
+			<div class="wrapper__cards cards__team">
+				<h1>Team Builder</h1>
+				<p>Scans our talent network to create the optimal team for your project</p>
+			</div>
+			<div class="wrapper__cards cards__karma">
+				<h1>Karma</h1>
+				<p>Regularly evaluates our talent to ensure quality</p>
+			</div>
+			<div class="wrapper__cards cards__calculator">
+				<h1>Calculator</h1>
+				<p>Uses data from past projects to provide better delivery estimates</p>
+			</div>
+		</div>
 	</body>
 </html>
